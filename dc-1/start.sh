@@ -25,3 +25,4 @@ consul agent \
   -config-file "${DATADIR}/${CONFIG_FILE}" \
   -data-dir "${DATADIR}" \
   -log-level "${LOG_LEVEL}"
+  
