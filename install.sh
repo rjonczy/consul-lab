@@ -10,3 +10,4 @@ sudo apt update && sudo apt install consul
 echo "installing consul-replicate"
 wget https://releases.hashicorp.com/consul-replicate/0.4.0/consul-replicate_0.4.0_linux_amd64.tgz
 tar xzfv consul-replicate_0.4.0_linux_amd64.tgz
+mv consul-replicate /usr/bin
