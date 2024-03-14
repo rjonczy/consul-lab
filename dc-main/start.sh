@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # ----------------------------------------------------
-BIND="127.0.0.1"
-RESULTS_DIR=${1:-"~/consuldata"}
+BIND=${1:-"127.0.0.1"}
+RESULTS_DIR="~/consuldata"
 DATADIR=$(mktemp -d ${RESULTS_DIR}/consul.XXXXXXXXXX)
 CONFIG_FILE="config.json"
 DC="dc-main"
