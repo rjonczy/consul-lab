@@ -11,6 +11,8 @@ DC="dc-main"
 LOG_LEVEL="DEBUG"
 # ----------------------------------------------------
 
+mkdir ${RESULTS_DIR}
+
 # copy config to tmp datadir
 cp ${CONFIG_FILE} ${DATADIR}/${CONFIG_FILE}
 
