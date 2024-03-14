@@ -5,6 +5,7 @@
 # ----------------------------------------------------
 BIND=${1:-"127.0.0.1"}
 RESULTS_DIR="~/consuldata"
+mkdir ${RESULTS_DIR}
 DATADIR=$(mktemp -d ${RESULTS_DIR}/consul.XXXXXXXXXX)
 CONFIG_FILE="config.json"
 DC="dc-1"
@@ -12,7 +13,6 @@ LOG_LEVEL="DEBUG"
 WAN_ADDR=${2:-"127.0.0.1:8204"}
 # ----------------------------------------------------
 
-mkdir ${RESULTS_DIR}
 
 # copy config to tmp datadir
 cp ${CONFIG_FILE} ${DATADIR}/${CONFIG_FILE}
