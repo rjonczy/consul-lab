@@ -4,8 +4,7 @@
 
 # ----------------------------------------------------
 BIND=${1:-"127.0.0.1"}
-RESULTS_DIR="~/consuldata"
-mkdir ${RESULTS_DIR}
+RESULTS_DIR="/tmp"
 DATADIR=$(mktemp -d ${RESULTS_DIR}/consul.XXXXXXXXXX)
 CONFIG_FILE="config.json"
 DC="dc-main"
