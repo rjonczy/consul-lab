@@ -6,6 +6,7 @@ services:
     image: hashicorp/consul:1.18
     ports:
       - '8300:8300'
+      - '8304:8304'
     volumes:
       - ./config.json:/consul/config/config.json
       - consul_data:/data:rw
@@ -23,6 +24,8 @@ services:
       - "DEBUG" 
       - -retry-join-wan 
       - 10.0.0.4:8204
+      - -advertise-wan
+      - "10.0.0.5"
     networks:
       - consul
 
