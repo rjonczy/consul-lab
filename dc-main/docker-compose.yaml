@@ -20,7 +20,9 @@ services:
       - -config-file 
       - "/consul/config/config.json" 
       - -log-level 
-      - "DEBUG" 
+      - "DEBUG"
+      - -advertise-wan
+      - "10.0.0.4"
     networks:
       - consul
 
