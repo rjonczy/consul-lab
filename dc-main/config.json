@@ -1,9 +1,9 @@
 {
     "ports": {
         "http": 8500,
-        "dns": 8201,
-        "serf_lan": 8203,
-        "serf_wan": 8204,
+        "dns": 8301,
+        "serf_lan": 8303,
+        "serf_wan": 8304,
         "server": 8205,
         "grpc": -1,
         "grpc_tls": -1
