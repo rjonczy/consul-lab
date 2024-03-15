@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+
+  consul:
+    image: hashicorp/consul:1.18
+    ports:
+      - '8300:8300'
+    volumes:
+      - ./config.json:/consul/config/config.json
+      - consul_data:/data:rw
+    command: 
+      - consul 
+      - agent 
+      - -dev 
+      - -datacenter 
+      - "dc-1" 
+      - -bind 
+      - "0.0.0.0" 
+      - -config-file 
+      - "/consul/config/config.json" 
+      - -log-level 
+      - "DEBUG" 
+      - -retry-join-wan 
+      - 10.0.0.4:8204
+    networks:
+      - consul
+
+volumes:
+  consul_data:
+
+networks:
+  consul:
+    name: consul
+    driver: bridge
