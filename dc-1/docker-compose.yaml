@@ -23,8 +23,6 @@ services:
       - "DEBUG" 
       - -retry-join-wan 
       - 10.0.0.4:8204
-      - -advertise-wan
-      - "10.0.0.5"
     networks:
       - consul
 
