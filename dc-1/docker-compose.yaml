@@ -5,7 +5,7 @@ services:
   consul:
     image: hashicorp/consul:1.18
     ports:
-      - '8300:8300'
+      - '8500:8500'
       - '8304:8304'
     volumes:
       - ./config.json:/consul/config/config.json

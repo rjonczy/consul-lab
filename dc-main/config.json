@@ -1,6 +1,6 @@
 {
     "ports": {
-        "http": 8200,
+        "http": 8500,
         "dns": 8201,
         "serf_lan": 8203,
         "serf_wan": 8204,
