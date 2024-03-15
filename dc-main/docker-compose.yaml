@@ -9,7 +9,7 @@ services:
     volumes:
       - ./config.json:/consul/config/config.json
       - consul_data:/data:rw
-    command: consul agent -dev -datacenter "dc-main" -bind "0.0.0.0" -config-file "/consul/config/config.json" -data-dir "/data" -log-level "DEBUG"
+    command: consul agent -dev -datacenter "dc-main" -bind "0.0.0.0" -config-file "/consul/config/config.json" -log-level "DEBUG"
     networks:
       - consul
 
