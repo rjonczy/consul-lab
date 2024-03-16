@@ -10,6 +10,12 @@ Successfully joined cluster by contacting 1 nodes.
 ```
 ### automatically using retry-join-wan
 
+Add flag `-retry-join-wan 10.0.0.4:8204` to `consul agent` in dc-1 or add
+```
+"retry-join-wan": "10.0.0.4:8204"
+```
+to json config file.
+
 https://developer.hashicorp.com/consul/docs/agent/config/config-files#retry_join_wan
 https://developer.hashicorp.com/consul/docs/agent/config/cli-flags#_retry_join_wan
 
