@@ -54,10 +54,11 @@ https://hub.docker.com/r/hashicorp/consul
 
 ## Links
 - [Federation gossip wan](https://developer.hashicorp.com/consul/tutorials/networking/federation-gossip-wan)
-- [Multi dc consul on k8s](https://tech.holidayextras.com/multi-dc-consul-on-kubernetes-9a6a7dcb89e3)
 - [Consul ali flags](https://developer.hashicorp.com/consul/docs/agent/config/cli-flags)
 - [Consul config files](https://developer.hashicorp.com/consul/docs/agent/config/config-files)
+- [federating clusters](https://mesh.demo.gs/federating_clusters)
+    - [examples](https://github.com/nicholasjackson/consul-migrating-brownfield-to-greenfield/tree/master/examples/federation)
+- [Multi dc consul on k8s](https://tech.holidayextras.com/multi-dc-consul-on-kubernetes-9a6a7dcb89e3)
 - https://developer.hashicorp.com/consul/docs/k8s/deployment-configurations/multi-cluster
 - https://developer.hashicorp.com/consul/docs/k8s/deployment-configurations/multi-cluster/kubernetes
 - https://developer.hashicorp.com/consul/docs/k8s/deployment-configurations/multi-cluster/vms-and-kubernetes
-- https://mesh.demo.gs/federating_clusters
