@@ -10,7 +10,7 @@ services:
       - '8304:8304/tcp'
     volumes:
       - ./config.json:/consul/config/config.json
-      - consul_data:/data:rw
+      - consul_data:/var/consul:rw
     command: 
       - consul 
       - agent 
