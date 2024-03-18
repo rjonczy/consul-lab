@@ -6,7 +6,7 @@
     "primary_datacenter": "dc-cluster-main",
     "bind_addr": "0.0.0.0",
     "advertise_addr": "192.168.7.5",
-    "advertise_addr_wan": "10.0.0.4:7304",
+    "advertise_addr_wan": "10.0.0.4",
     "bootstrap_expect": 3,
     "server": true,
     "retry_join": ["consul-server-1:8303", "consul-server-2:8303"],
