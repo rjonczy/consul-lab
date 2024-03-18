@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONSUL_URL="http://localhost:8200/v1/kv"
+CONSUL_URL="http://localhost:8500/v1/kv"
 KEY_PREFIX="global/"
 
 COUNTER=1
