@@ -1,13 +1,15 @@
 {
-    "node_name": "node-0",
+    "node_name": "node-1",
     "log_level": "DEBUG",
     "data_dir": "/tmp/consul",
     "datacenter": "dc-cluster-main",
     "primary_datacenter": "dc-cluster-main",
     "bind_addr": "0.0.0.0",
-    "advertise_addr_wan": "10.0.0.4",
-    "bootstrap_expect": 1,
+    "advertise_addr": "192.168.7.6",
+    "advertise_addr_wan": "10.0.0.4:8304",
+    "bootstrap_expect": 3,
     "server": true,
+    "retry_join": ["consul-server-0:8303", "consul-server-2:8303"],
     "retry_join_wan": ["10.0.0.5:8304"],
     "ports": {
         "http": 8500,
