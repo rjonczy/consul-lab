@@ -13,8 +13,7 @@ services:
     command: 
       - consul 
       - agent 
-      - -config-file 
-      - "/consul/config/config.json" 
+      - -config-file="/consul/config/config.json" 
     networks:
       consul_cluster:
         ipv4_address: 192.168.7.5
@@ -30,8 +29,7 @@ services:
     command: 
       - consul 
       - agent 
-      - -config-file 
-      - "/consul/config/config.json" 
+      - -config-file="/consul/config/config.json" 
     networks:
       consul_cluster:
         ipv4_address: 192.168.7.6
@@ -47,8 +45,7 @@ services:
     command: 
       - consul 
       - agent 
-      - -config-file 
-      - "/consul/config/config.json" 
+      - -config-file="/consul/config/config.json" 
     networks:
       consul_cluster:
         ipv4_address: 192.168.7.7
