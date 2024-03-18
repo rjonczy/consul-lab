@@ -2,7 +2,7 @@
     "node_name": "node-0",
     "log_level": "DEBUG",
     "data_dir": "/tmp/consul",
-    "datacenter": "dc-single-",
+    "datacenter": "dc-single-1",
     "bind_addr": "0.0.0.0",
     "advertise_addr_wan": "10.0.0.5",
     "bootstrap_expect": 1,
