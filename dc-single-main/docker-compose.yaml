@@ -13,8 +13,7 @@ services:
     command: 
       - consul 
       - agent 
-      - -config-file 
-      - "/consul/config/config.json" 
+      - -config-file="/consul/config/config.json" 
     networks:
       - consul
 
