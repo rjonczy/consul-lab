@@ -10,7 +10,7 @@ while true; do
   
   KEY_NAME="${KEY_PREFIX}${COUNTER}"
   KEY_VALUE="This is value ${COUNTER}"
-  curl -X PUT -d "${KEY_VALUE}" "${CONSUL_URL}/${KEY_NAME}"
+  curl -L -X PUT -d "${KEY_VALUE}" "${CONSUL_URL}/${KEY_NAME}"
 
   echo "Added key ${KEY_NAME} with value: ${KEY_VALUE}"
 
