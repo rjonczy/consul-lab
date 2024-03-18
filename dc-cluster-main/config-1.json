@@ -10,7 +10,6 @@
     "bootstrap_expect": 3,
     "server": true,
     "retry_join": ["consul-server-0:8303", "consul-server-2:8303"],
-    "retry_join_wan": ["10.0.0.5:8304"],
     "ports": {
         "http": 8500,
         "dns": 8301,
