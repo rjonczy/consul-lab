@@ -1,4 +1,5 @@
 {
+    "node_name": "node-0",
     "log_level": "DEBUG",
     "data_dir": "/tmp/consul",
     "datacenter": "dc-1",
