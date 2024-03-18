@@ -40,6 +40,7 @@ services:
     image: hashicorp/consul:1.18
     container_name: consul-server-2
     ports:
+      - '8500:8500'
       - '8304:8304/udp' # serfwan (udp)
       - '8304:8304/tcp' # serfwan (tcp)
     volumes:
