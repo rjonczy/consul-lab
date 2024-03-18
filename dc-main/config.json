@@ -3,6 +3,7 @@
     "datacenter": "dc-main",
     "bind_addr": "0.0.0.0",
     "advertise_addr_wan": "10.0.0.4",
+    "bootstrap_expect": 1,
     "ports": {
         "http": 8500,
         "dns": 8301,
