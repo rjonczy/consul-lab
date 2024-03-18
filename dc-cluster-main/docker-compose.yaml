@@ -43,7 +43,7 @@ services:
       - '8304:8304/udp' # serfwan (udp)
       - '8304:8304/tcp' # serfwan (tcp)
     volumes:
-      - ./config-1.json:/consul/config/config.json
+      - ./config-2.json:/consul/config/config.json
     command: 
       - consul 
       - agent 
