@@ -1,6 +1,12 @@
 # consul-lab
 Consul lab
 
+## lab1: "2 datacenters: single consul nodes on vm"
+
+## lab2: "2 datacenters: single consul nodes inside docker"
+
+## lab3: "2 datacenters: 3 nodes consul cluster in docker / single node inside docker"
+
 ## join 2 datacenters 
 
 ### manually
