@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+
+  consul-server-0:
+    image: hashicorp/consul:1.18
+    container_name: consul-server-0
+    ports:
+      - '7304:8304/udp'
+      - '7304:8304/tcp'
+    volumes:
+      - ./config-0.json:/consul/config/config.json
+    command: 
+      - consul 
+      - agent 
+      - -config-file 
+      - "/consul/config/config.json" 
+    networks:
+      consul_cluster:
+        ipv4_address: 192.168.7.5
+
+  consul-server-1:
+    image: hashicorp/consul:1.18
+    container_name: consul-server-1
+    ports:
+      - '9304:8304/udp'
+      - '9304:8304/tcp'
+    volumes:
+      - ./config-1.json:/consul/config/config.json
+    command: 
+      - consul 
+      - agent 
+      - -config-file 
+      - "/consul/config/config.json" 
+    networks:
+      consul_cluster:
+        ipv4_address: 192.168.7.6
+
+  consul-server-2:
+    image: hashicorp/consul:1.18
+    container_name: consul-server-2
+    ports:
+      - '8304:8304/udp'
+      - '8304:8304/tcp'
+    volumes:
+      - ./config-1.json:/consul/config/config.json
+    command: 
+      - consul 
+      - agent 
+      - -config-file 
+      - "/consul/config/config.json" 
+    networks:
+      consul_cluster:
+        ipv4_address: 192.168.7.7
+
+networks:
+  consul_cluster:
+    name: consul_cluster
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 192.168.7.0/24
