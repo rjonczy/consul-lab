@@ -6,7 +6,7 @@
     "advertise_addr_wan": "10.0.0.5",
     "bootstrap_expect": 1,
     "server": true,
-    "retry_join_wan": "10.0.0.4:8304",
+    "retry_join_wan": ["10.0.0.4:8304"],
     "ports": {
         "http": 8500,
         "dns": 8301,
