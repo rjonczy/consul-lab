@@ -15,7 +15,6 @@ services:
       - consul 
       - agent 
       - -bootstrap-expect=1
-      - -dev 
       - -datacenter 
       - "dc-main" 
       - -bind 
