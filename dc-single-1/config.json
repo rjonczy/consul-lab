@@ -7,7 +7,7 @@
     "bind_addr": "0.0.0.0",
     "bootstrap_expect": 1,
     "server": true,
-    "retry_join_wan": ["10.0.0.4:8304"],
+    "retry_join_wan": ["10.0.0.4:7304", "10.0.0.4:8304","10.0.0.4:9304"],
     "ports": {
         "http": 8500,
         "dns": 8301,
