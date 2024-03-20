@@ -1,2 +1,2 @@
 #!/bin/bash
-docker exec -it consul-server-0 consul kv get -keys -http-addr http://localhost:8500
+docker exec -it dc-single-1-consul-1 consul kv get -keys -http-addr http://localhost:8500
