@@ -4,7 +4,6 @@
     "data_dir": "/tmp/consul",
     "datacenter": "dc-single-1",
     "primary_datacenter": "dc-single-main",
-    "bind_addr": "0.0.0.0",
     "bootstrap_expect": 1,
     "server": true,
     "retry_join_wan": ["10.0.0.4:7304", "10.0.0.4:8304","10.0.0.4:9304"],
