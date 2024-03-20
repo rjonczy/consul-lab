@@ -1,6 +1,8 @@
 #!/bin/bash
 
-CONSUL_URL="http://10.0.0.4:8500/v1/kv"
+PORT=$1
+
+CONSUL_URL="http://10.0.0.4:${PORT}/v1/kv"
 KEY_PREFIX="global/"
 
 COUNTER=1
