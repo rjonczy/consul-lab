@@ -18,6 +18,18 @@ services:
     networks:
       - consul
 
+  consul-replicate:
+    image: hashicorp/consul-replicate:0.4.0-alpine
+    command: 
+      - consul-replicate
+      - -consul-addr
+      - consul:8500
+      - -prefix
+      - "global@dc-cluster-main:backup"
+      - -log-level "DEBUG"
+    networks:
+      - consul
+
 
 networks:
   consul:
