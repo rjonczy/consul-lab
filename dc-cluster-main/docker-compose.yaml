@@ -43,6 +43,7 @@ services:
     container_name: consul-server-2
     ports:
       - '8502:8500'
+      - '8204:8204'
       - '8304:8304/udp' # serfwan (udp)
       - '8304:8304/tcp' # serfwan (tcp)
     volumes:
