@@ -26,7 +26,8 @@ services:
       - consul:8500
       - -prefix
       - "global@dc-cluster-main:backup"
-      - -log-level "DEBUG"
+      - -log-level 
+      - "DEBUG"
     networks:
       - consul
 
