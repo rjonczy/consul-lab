@@ -1,6 +1,9 @@
 #!/bin/bash
 
-CONSUL_URL="http://localhost:8500/v1/kv"
+# ./add-keys.sh 10.0.0.5:8300
+
+CONSUL_RPC_ADDR=${1:-"127.0.0.1:8500"}
+CONSUL_URL="http://${CONSUL_RPC_ADDR}/v1/kv"
 KEY_PREFIX="global/"
 
 COUNTER=1
