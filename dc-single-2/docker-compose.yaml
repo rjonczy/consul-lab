@@ -30,6 +30,8 @@ services:
       - "DEBUG"
     networks:
       - consul
+    depends_on:
+      - consul
 
 
 networks:
