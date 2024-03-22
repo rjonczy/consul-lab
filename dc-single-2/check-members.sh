@@ -1,2 +1,2 @@
 #!/bin/bash
-consul members -wan -http-addr http://localhost:8300
+consul members -wan -http-addr http://localhost:8500
