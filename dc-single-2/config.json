@@ -1,0 +1,22 @@
+{
+    "node_name": "node-0",
+    "log_level": "DEBUG",
+    "data_dir": "/tmp/consul",
+    "datacenter": "dc-single-1",
+    "primary_datacenter": "dc-main",
+    "bootstrap_expect": 1,
+    "bind_addr": "0.0.0.0",
+    "client_addr": "0.0.0.0",
+    "server": true,
+    "retry_join_wan": ["74.248.9.80:8302"],
+    "ports": {
+        "http": 8500,
+        "dns": 8301,
+        "serf_lan": 8303,
+        "serf_wan": 8304,
+        "server": 8305,
+        "grpc": -1,
+        "grpc_tls": -1
+    },
+    "translate_wan_addrs": true
+}
