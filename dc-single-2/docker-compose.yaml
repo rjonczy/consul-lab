@@ -25,7 +25,7 @@ services:
   #     - -consul-addr
   #     - consul:8500
   #     - -prefix
-  #     - "global@dc-main:backup"
+  #     - "global@main-dc:backup"
   #     - -log-level 
   #     - "DEBUG"
   #   networks:
